@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings.prod') ##개발할 때 dev / 배포할 때 prod
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
